@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F354FBF729826ABF006DFBE5 /* MyCaculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354FBF629826ABF006DFBE5 /* MyCaculatorApp.swift */; };
-		F354FBF929826ABF006DFBE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354FBF829826ABF006DFBE5 /* ContentView.swift */; };
+		F354FBF729826ABF006DFBE5 /* MyCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354FBF629826ABF006DFBE5 /* MyCalculatorApp.swift */; };
+		F354FBF929826ABF006DFBE5 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354FBF829826ABF006DFBE5 /* CalculatorView.swift */; };
 		F354FBFB29826ABF006DFBE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F354FBFA29826ABF006DFBE5 /* Assets.xcassets */; };
 		F354FBFE29826ABF006DFBE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F354FBFD29826ABF006DFBE5 /* Preview Assets.xcassets */; };
+		F354FC0529826CF0006DFBE5 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354FC0429826CF0006DFBE5 /* CalculatorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F354FBF329826ABF006DFBE5 /* MyCaculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCaculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F354FBF629826ABF006DFBE5 /* MyCaculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCaculatorApp.swift; sourceTree = "<group>"; };
-		F354FBF829826ABF006DFBE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F354FBF329826ABF006DFBE5 /* MyCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F354FBF629826ABF006DFBE5 /* MyCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalculatorApp.swift; sourceTree = "<group>"; };
+		F354FBF829826ABF006DFBE5 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		F354FBFA29826ABF006DFBE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F354FBFD29826ABF006DFBE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F354FC0429826CF0006DFBE5 /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +37,7 @@
 		F354FBEA29826ABF006DFBE5 = {
 			isa = PBXGroup;
 			children = (
-				F354FBF529826ABF006DFBE5 /* MyCaculator */,
+				F354FBF529826ABF006DFBE5 /* MyCalculator */,
 				F354FBF429826ABF006DFBE5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +45,21 @@
 		F354FBF429826ABF006DFBE5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F354FBF329826ABF006DFBE5 /* MyCaculator.app */,
+				F354FBF329826ABF006DFBE5 /* MyCalculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F354FBF529826ABF006DFBE5 /* MyCaculator */ = {
+		F354FBF529826ABF006DFBE5 /* MyCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				F354FBF629826ABF006DFBE5 /* MyCaculatorApp.swift */,
-				F354FBF829826ABF006DFBE5 /* ContentView.swift */,
+				F354FBF629826ABF006DFBE5 /* MyCalculatorApp.swift */,
+				F354FBF829826ABF006DFBE5 /* CalculatorView.swift */,
+				F354FC0429826CF0006DFBE5 /* CalculatorModel.swift */,
 				F354FBFA29826ABF006DFBE5 /* Assets.xcassets */,
 				F354FBFC29826ABF006DFBE5 /* Preview Content */,
 			);
-			path = MyCaculator;
+			path = MyCalculator;
 			sourceTree = "<group>";
 		};
 		F354FBFC29826ABF006DFBE5 /* Preview Content */ = {
@@ -70,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F354FBF229826ABF006DFBE5 /* MyCaculator */ = {
+		F354FBF229826ABF006DFBE5 /* MyCalculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F354FC0129826ABF006DFBE5 /* Build configuration list for PBXNativeTarget "MyCaculator" */;
+			buildConfigurationList = F354FC0129826ABF006DFBE5 /* Build configuration list for PBXNativeTarget "MyCalculator" */;
 			buildPhases = (
 				F354FBEF29826ABF006DFBE5 /* Sources */,
 				F354FBF029826ABF006DFBE5 /* Frameworks */,
@@ -82,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = MyCaculator;
+			name = MyCalculator;
 			productName = MyCaculator;
-			productReference = F354FBF329826ABF006DFBE5 /* MyCaculator.app */;
+			productReference = F354FBF329826ABF006DFBE5 /* MyCalculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F354FBEE29826ABF006DFBE5 /* Build configuration list for PBXProject "MyCaculator" */;
+			buildConfigurationList = F354FBEE29826ABF006DFBE5 /* Build configuration list for PBXProject "MyCalculator" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F354FBF229826ABF006DFBE5 /* MyCaculator */,
+				F354FBF229826ABF006DFBE5 /* MyCalculator */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F354FBF929826ABF006DFBE5 /* ContentView.swift in Sources */,
-				F354FBF729826ABF006DFBE5 /* MyCaculatorApp.swift in Sources */,
+				F354FC0529826CF0006DFBE5 /* CalculatorModel.swift in Sources */,
+				F354FBF929826ABF006DFBE5 /* CalculatorView.swift in Sources */,
+				F354FBF729826ABF006DFBE5 /* MyCalculatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +270,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MyCaculator/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MyCalculator/Preview Content\"";
 				DEVELOPMENT_TEAM = ZX8V36P46K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +299,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MyCaculator/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MyCalculator/Preview Content\"";
 				DEVELOPMENT_TEAM = ZX8V36P46K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -320,7 +324,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F354FBEE29826ABF006DFBE5 /* Build configuration list for PBXProject "MyCaculator" */ = {
+		F354FBEE29826ABF006DFBE5 /* Build configuration list for PBXProject "MyCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F354FBFF29826ABF006DFBE5 /* Debug */,
@@ -329,7 +333,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F354FC0129826ABF006DFBE5 /* Build configuration list for PBXNativeTarget "MyCaculator" */ = {
+		F354FC0129826ABF006DFBE5 /* Build configuration list for PBXNativeTarget "MyCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F354FC0229826ABF006DFBE5 /* Debug */,

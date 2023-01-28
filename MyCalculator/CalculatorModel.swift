@@ -62,6 +62,7 @@ class CalculatorModel: ObservableObject {
         case unaryOperation((Double) -> Double)
         case binaryOperation((Double, Double) -> Double)
         case equals
+        case clear
     }
     
     private var operations: Dictionary<String, Operation> = [
@@ -71,7 +72,8 @@ class CalculatorModel: ObservableObject {
         "+" : Operation.binaryOperation({ $0 + $1 }),
         "-" : Operation.binaryOperation({ $0 - $1 }),
         "÷" : Operation.binaryOperation({ $0 / $1 }),
-        "=" : Operation.equals
+        "=" : Operation.equals,
+        "C" : Operation.clear
     ]
     
     
@@ -102,6 +104,9 @@ class CalculatorModel: ObservableObject {
                 }
             case .equals:
                 performPendingBinaryOperation()
+            case .clear:
+                clearOperation()
+                
             }
         }
     }
@@ -121,6 +126,12 @@ class CalculatorModel: ObservableObject {
             accumulator = pend.perform(with: accum)
             pbo = nil
         }
+    }
+    
+    private func clearOperation() {
+        accumulator = nil
+        pbo = nil
+        displayValue = "0"
     }
     
     
